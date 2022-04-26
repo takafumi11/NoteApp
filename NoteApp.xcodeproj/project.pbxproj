@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8343CCC12817CCEA00521F2E /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343CCC02817CCEA00521F2E /* NoteRow.swift */; };
+		8343CCC32817CD1700521F2E /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343CCC22817CD1700521F2E /* NoteModel.swift */; };
 		E4B8AB062817CBC9003A552E /* NoteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8AB052817CBC9003A552E /* NoteAppApp.swift */; };
 		E4B8AB082817CBC9003A552E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8AB072817CBC9003A552E /* ContentView.swift */; };
 		E4B8AB0A2817CBCB003A552E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8AB092817CBCB003A552E /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8343CCC02817CCEA00521F2E /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		8343CCC22817CD1700521F2E /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		E4B8AB022817CBC9003A552E /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8AB052817CBC9003A552E /* NoteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAppApp.swift; sourceTree = "<group>"; };
 		E4B8AB072817CBC9003A552E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8343CCBE2817CCD000521F2E /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				8343CCC02817CCEA00521F2E /* NoteRow.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		8343CCBF2817CCD500521F2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8343CCC22817CD1700521F2E /* NoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E4B8AAF92817CBC9003A552E = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +71,8 @@
 		E4B8AB042817CBC9003A552E /* NoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				8343CCBF2817CCD500521F2E /* Model */,
+				8343CCBE2817CCD000521F2E /* VIew */,
 				E4B8AB052817CBC9003A552E /* NoteAppApp.swift */,
 				E4B8AB072817CBC9003A552E /* ContentView.swift */,
 				E4B8AB092817CBCB003A552E /* Assets.xcassets */,
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8343CCC12817CCEA00521F2E /* NoteRow.swift in Sources */,
+				8343CCC32817CD1700521F2E /* NoteModel.swift in Sources */,
 				E4B8AB082817CBC9003A552E /* ContentView.swift in Sources */,
 				E4B8AB062817CBC9003A552E /* NoteAppApp.swift in Sources */,
 			);
