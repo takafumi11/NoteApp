@@ -28,9 +28,8 @@ struct NoteRow: View {
 
 struct NoteRow_Previews: PreviewProvider {
     static var previews: some View {
-        let noteModel = NoteModel(id: 0, title: "titlee", body: "body")
         
-        NoteRow(noteModel: noteModel)
+        NoteRow(noteModel: NoteDataModel().noteDataModel[1])
         .previewLayout(.fixed(width: 300, height: 70))
         
     }
