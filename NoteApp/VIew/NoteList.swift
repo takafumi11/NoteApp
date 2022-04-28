@@ -29,7 +29,7 @@ struct NoteList: View {
                     .textFieldStyle(.roundedBorder)
                     .padding()
                 
-//                AddNoteButton(dataModel: $noteModelSample)
+                AddNoteButton(dataModel: $noteModelSample[0])
                 
                 List(0..<NoteDataModel().noteDataModel.count) { num in
                     NavigationLink(destination: UpdataView(noteModel: $noteModelSample[num])) {

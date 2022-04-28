@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddNoteButton: View {
     @Binding var dataModel: NoteModel
-    @State var dummyText: String = "tap here"
+    @State var dummyText: String = "Add new note"
     
     var body: some View {
         Button(action: {
@@ -17,8 +17,8 @@ struct AddNoteButton: View {
             dataModel = NoteModel(id: 0, title: "replace title", body: "replace body")
             NoteDataModel().noteDataModel[0] = dataModel
             
-//            NoteDataModel().noteDataModel.append(NoteModel(id: 0, title: "sss", body: ""))
-            dummyText = NoteDataModel().noteDataModel.last!.title
+            NoteDataModel().noteDataModel.append(NoteModel(id: 0, title: "sss", body: ""))
+//            dummyText = NoteDataModel().noteDataModel.last!.title
 //            dummyText = String(NoteDataModel().noteDataModel.count)
         }){
             Text(dummyText)
