@@ -10,7 +10,7 @@ import SwiftUI
 struct NoteList: View {
     var noteDataModel = NoteDataModel()
     
-    @State var noteModelSample = NoteDataModel().noteDataModel[0]
+    @State var noteModelSample = NoteDataModel().noteDataModel
     
     var body: some View {
         NavigationView {
@@ -31,9 +31,9 @@ struct NoteList: View {
                 
 //                AddNoteButton(dataModel: $noteModelSample)
                 
-                List {
-                    NavigationLink(destination: UpdataView(noteModel: $noteModelSample)) {
-                        NoteRow(noteModel: noteModelSample)
+                List(0..<NoteDataModel().noteDataModel.count) { num in
+                    NavigationLink(destination: UpdataView(noteModel: $noteModelSample[num])) {
+                        NoteRow(noteModel: noteModelSample[num])
                     }
                 }
 
