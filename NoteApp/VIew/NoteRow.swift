@@ -15,8 +15,10 @@ struct NoteRow: View {
             VStack(alignment: .leading) {
                 Text(noteModel.title)
                     .fontWeight(.bold)
+                    .lineLimit(1)
                     
                 Text(noteModel.body)
+                    .lineLimit(1)
                 
             }
             Spacer()

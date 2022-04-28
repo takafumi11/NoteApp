@@ -7,8 +7,9 @@
 
 import Foundation
 
-final class NoteDataModel {
-    var noteDataModel: [NoteModel] = [NoteModel(id: 0, title: "note0", body: "sampleStirng0"),
-                                      NoteModel(id: 1, title: "note1", body: "sampleStirng1"),
-                                      NoteModel(id: 2, title: "note2", body: "sampleStirng2")]
+final class NoteDataModel: ObservableObject {
+    var noteDataModel: [NoteModel] = [NoteModel(id: 0, title: "title0", body: "bodySample0"),
+                                      NoteModel(id: 1, title: "title1", body: "bodySample1"),
+                                      NoteModel(id: 2, title: "title2", body: "bodySample2")]
+    
 }

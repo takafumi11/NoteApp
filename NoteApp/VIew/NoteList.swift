@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct NoteList: View {
-    var noteDataModel: NoteDataModel
+    var noteDataModel = NoteDataModel()
+    
+    @State var noteModelSample = NoteDataModel().noteDataModel[0]
     
     var body: some View {
-        List {
-            ForEach(noteDataModel.noteDataModel) { dataModel in
-                NoteRow(noteModel: dataModel)
+        NavigationView {
+            VStack() {
+                
+                HStack {
+                    Text("Note App Sample")
+                        .fontWeight(.bold)
+                        .font(.largeTitle)
+                    
+                    Spacer()
+                    
+                }
+                
+                TextField("(I intended as a search bar)", text: .constant(""))
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                
+//                AddNoteButton(dataModel: $noteModelSample)
+                
+                List {
+                    NavigationLink(destination: UpdataView(noteModel: $noteModelSample)) {
+                        NoteRow(noteModel: noteModelSample)
+                    }
+                }
+
             }
+            .background(Color(UIColor.systemGray6))
             
         }
     }
@@ -22,6 +46,7 @@ struct NoteList: View {
 
 struct NoteList_Previews: PreviewProvider {
     static var previews: some View {
-        NoteList(noteDataModel: NoteDataModel())
+        NoteList()
+            
     }
 }
