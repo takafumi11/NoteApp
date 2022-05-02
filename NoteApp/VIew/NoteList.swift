@@ -8,19 +8,16 @@
 import SwiftUI
 
 struct NoteList: View {
-    var noteDataModel = NoteDataModel()
-    
-    @State var noteModelSample = NoteDataModel().noteDataModel
+    @State var dataModel: [NoteModel] = []
+    @State var newNote = NoteModel(id: 0, title: "", body: "")
     
     var body: some View {
         NavigationView {
             VStack() {
-                
                 HStack {
                     Text("Note App Sample")
                         .fontWeight(.bold)
                         .font(.largeTitle)
-                    
                     Spacer()
                     
                 }
@@ -29,11 +26,20 @@ struct NoteList: View {
                     .textFieldStyle(.roundedBorder)
                     .padding()
                 
-                AddNoteButton(dataModel: $noteModelSample[0])
+                NavigationLink(destination: UpdataView(noteModel: $newNote)) {
+                    Text("Create New Note")
+                    
+                }
+                .onAppear {
+                    if newNote.title != "" {
+                        addNewNote()
+                    }
+                    
+                }
                 
-                List(0..<NoteDataModel().noteDataModel.count) { num in
-                    NavigationLink(destination: UpdataView(noteModel: $noteModelSample[num])) {
-                        NoteRow(noteModel: noteModelSample[num])
+                List(0..<$dataModel.count, id: \.self) { num in
+                    NavigationLink(destination: UpdataView(noteModel: $dataModel[num])) {
+                        NoteRow(noteModel: dataModel[num])
                     }
                 }
 
@@ -41,6 +47,11 @@ struct NoteList: View {
             .background(Color(UIColor.systemGray6))
             
         }
+    }
+    
+    private func addNewNote() {
+        dataModel.append(newNote)
+        newNote.title = ""
     }
 }
 

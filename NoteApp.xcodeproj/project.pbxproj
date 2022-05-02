@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		831B39A5281A51D000F0F897 /* AddNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B39A4281A51D000F0F897 /* AddNoteButton.swift */; };
 		8343CCC12817CCEA00521F2E /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343CCC02817CCEA00521F2E /* NoteRow.swift */; };
 		8343CCC32817CD1700521F2E /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343CCC22817CD1700521F2E /* NoteModel.swift */; };
 		83E933722818FD5300D327C3 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E933712818FD5300D327C3 /* NoteList.swift */; };
-		83E933742818FDD400D327C3 /* NoteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E933732818FDD400D327C3 /* NoteDataModel.swift */; };
 		83E9337628190EE400D327C3 /* UpdataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9337528190EE400D327C3 /* UpdataView.swift */; };
 		E4B8AB062817CBC9003A552E /* NoteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8AB052817CBC9003A552E /* NoteAppApp.swift */; };
-		E4B8AB082817CBC9003A552E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8AB072817CBC9003A552E /* ContentView.swift */; };
 		E4B8AB0A2817CBCB003A552E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8AB092817CBCB003A552E /* Assets.xcassets */; };
 		E4B8AB0D2817CBCB003A552E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8AB0C2817CBCB003A552E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		831B39A4281A51D000F0F897 /* AddNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteButton.swift; sourceTree = "<group>"; };
 		8343CCC02817CCEA00521F2E /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
 		8343CCC22817CD1700521F2E /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		83E933712818FD5300D327C3 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
-		83E933732818FDD400D327C3 /* NoteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDataModel.swift; sourceTree = "<group>"; };
 		83E9337528190EE400D327C3 /* UpdataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdataView.swift; sourceTree = "<group>"; };
 		E4B8AB022817CBC9003A552E /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8AB052817CBC9003A552E /* NoteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAppApp.swift; sourceTree = "<group>"; };
-		E4B8AB072817CBC9003A552E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4B8AB092817CBCB003A552E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B8AB0C2817CBCB003A552E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +44,6 @@
 				8343CCC02817CCEA00521F2E /* NoteRow.swift */,
 				83E933712818FD5300D327C3 /* NoteList.swift */,
 				83E9337528190EE400D327C3 /* UpdataView.swift */,
-				831B39A4281A51D000F0F897 /* AddNoteButton.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -59,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				8343CCC22817CD1700521F2E /* NoteModel.swift */,
-				83E933732818FDD400D327C3 /* NoteDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,7 +78,6 @@
 				8343CCBF2817CCD500521F2E /* Model */,
 				8343CCBE2817CCD000521F2E /* VIew */,
 				E4B8AB052817CBC9003A552E /* NoteAppApp.swift */,
-				E4B8AB072817CBC9003A552E /* ContentView.swift */,
 				E4B8AB092817CBCB003A552E /* Assets.xcassets */,
 				E4B8AB0B2817CBCB003A552E /* Preview Content */,
 			);
@@ -173,10 +164,7 @@
 			files = (
 				83E9337628190EE400D327C3 /* UpdataView.swift in Sources */,
 				8343CCC12817CCEA00521F2E /* NoteRow.swift in Sources */,
-				83E933742818FDD400D327C3 /* NoteDataModel.swift in Sources */,
 				8343CCC32817CD1700521F2E /* NoteModel.swift in Sources */,
-				831B39A5281A51D000F0F897 /* AddNoteButton.swift in Sources */,
-				E4B8AB082817CBC9003A552E /* ContentView.swift in Sources */,
 				E4B8AB062817CBC9003A552E /* NoteAppApp.swift in Sources */,
 				83E933722818FD5300D327C3 /* NoteList.swift in Sources */,
 			);

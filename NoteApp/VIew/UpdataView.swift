@@ -18,13 +18,3 @@ struct UpdataView: View {
         
     }
 }
-
-struct UpdataView_Previews: PreviewProvider {
-    static let dataModel = NoteDataModel()
-    static var previews: some View {
-        
-        UpdataView(noteModel: .constant(NoteModel(id: 0, title: "", body: "")))
-        
-    }
-}
-
